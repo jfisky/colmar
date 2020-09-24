@@ -1,12 +1,16 @@
+/* NOTES:
+- colors based on palette at: https://icolorpalette.com/545454_e9e9e9_dcdcdc_8c8c8c_5c5c5c
+*/
+
 html {
-    background-color: #eeeeee;
+    background-color: #ffffff;
 }
 
 /* header */
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: no;
+    flex-wrap: nowrap;
     align-items: center;
     width: 100%;
     height: 64px;
@@ -22,12 +26,13 @@ header .logo {
 
 .company-name-header {
     font-weight: bold;
-    color: black;
+    color: #353535;
 }
 
 header h1 {
     height: 32px;
     width: auto;
+    color: #dcdcdc;
     font-size: 32px;
     font-weight: normal;
     text-transform: uppercase;
@@ -55,7 +60,7 @@ nav li {
     display: inline-block;
     margin: 0px 0px 0px 16px;
     vertical-align: middle;
-
+    /* edit font */
 }
 
 nav li a {
@@ -69,15 +74,81 @@ nav li a {
 - set font for section headers (h2)
 - set font for subsection headers (h3) 
 - set hover background color for subsections to gray */
+p {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* sections overall */
+.section-container {
+    width: 100%;
+    height: auto;
+    padding: 32px 0px 32px 24px;
+    display: grid;
+}
 
 /* section 1 */
+#section-1 {
+    background-color: #dcdcdc;
+    grid-template: 1fr / 60% 4fr 1fr;
+    column-gap: 24px;
+}
 
+#section-1 figure {
+    grid-area: 1 / 1 / span 1 / span 1;
+    margin: 0px;
+}
+
+#section-1 figure img {
+    width: 100%;
+    height: auto;
+}
+
+#section-1-info {
+    grid-area: 1 / 2 / span 1 / span 1;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#section-1-info h2 {
+    width: 100%;
+    color: #474747;
+    font-size: 36px;
+    margin: 0px;
+}
+
+#section-1-info p {
+    width: 100%;
+    color: #474747;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+#section-1-info button {
+    background-color: #474747;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 0px 8px 0px;
+    border: none;
+}
+
+#section-1-info button:hover {
+    cursor: pointer;
+}
 
 /* section 2 */
 
 
 /* section 3 */
-
+#section-3 {
+    background-color: #dcdcdc;
+}
 
 /* section 4 */
 
