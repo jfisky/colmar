@@ -3,18 +3,29 @@
 <head>
     <title>Colmar Academy</title>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img class="logo" src="resources/images/ic-logo.svg">
-        <h1><span class="company-name-header">Colmar</span>Academy</h1>
+        <h1 class="desktop"><span class="company-name-header">Colmar</span>Academy</h1>
         <nav>
-            <ul>
+            <ul class="desktop">
                 <li><a href="#">On campus</a></li>
                 <li><a href="#">Online</a></li>
                 <li><a href="#">Our companies</a></li>
                 <li><a href="#">Sign in</a></li>
             </ul>
+            <a class="mobile" href="#"><img class="mobile" src="resources/images/ic-logo.svg"></a>
+            <a class="mobile" href="#"><img class="mobile" src="resources/images/ic-on-campus.svg"></a>
+            <a class="mobile" href="#"><img class="mobile" src="resources/images/ic-online.svg"></a>
+            <a class="mobile" href="#"><img class="mobile" src="resources/images/ic-login.svg"></a>
+            <!-- <ul class="mobile">
+                <li><a href="#"><img src="resources/images/ic-logo.svg"></a></li>
+                <li><a href="#"><img src="resources/images/ic-logo.svg"></a></li>
+                <li><a href="#"><img src="resources/images/ic-logo.svg"></a></li>
+                <li><a href="#"><img src="resources/images/ic-logo.svg"></a></li>
+            </ul> -->
         </nav>
     </header>
     <main>
@@ -72,8 +83,6 @@
         </section>
         <section class="section-container" id="section-3">
             <h2>Start learning</h2>
-            <!--a grid of 3 row, 2 columns, 32px between each column & row, 
-                and 72px padding left & right-->
             <div id="section-3-grid">
                 <div class="tab-type-2" id="s3-t1">
                     <figure>
@@ -150,7 +159,7 @@
                 <div id="section-4-right">
                     <div class="tab-type-1" id="s4-t1">
                         <figure>
-                            <img src="resources/images/information-orientation.jpg">
+                            <img src="resources/images/thesis-fisma.jpg">
                         </figure>
                         <div class="tab-type-1-info">
                             <h3>Fisma: Design and Prototype</h2>
@@ -159,7 +168,7 @@
                     </div>
                     <div class="tab-type-1" id="s4-t2">
                         <figure>
-                            <img src="resources/images/information-campus.jpg">
+                            <img src="resources/images/thesis-now-and-then.jpg">
                         </figure>
                         <div class="tab-type-1-info">
                             <h3>Now and then</h2>
@@ -171,7 +180,11 @@
         </section>
     </main>
     <footer>
-
+        <p>© 2016 Colmar Academy. All rights reserved</p>
+        <ul>
+            <li>Terms</li>
+            <li>Privacy</li>
+        </ul>
     </footer>
 </body>
 </html>

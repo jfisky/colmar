@@ -6,6 +6,10 @@ html {
     background-color: #ffffff;
 }
 
+body {
+    margin: 0px;
+}
+
 /* header */
 header {
     display: flex;
@@ -26,6 +30,7 @@ header .logo {
 
 .company-name-header {
     font-weight: bold;
+    font-family: 'Nunito', sans-serif;
     color: #353535;
 }
 
@@ -35,6 +40,7 @@ header h1 {
     color: #dcdcdc;
     font-size: 32px;
     font-weight: normal;
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     color: darkgray;
     display: inline-block;
@@ -48,34 +54,33 @@ nav {
     margin: 0px 24px 0px auto;
 }
 
-nav ul {
+nav ul.desktop {
     margin: 6px 0px 0px 0px;
     text-align: center;
-
 }
 
-nav li {
+nav ul.desktop li {
     height: 30px;
     font-size: 20px;
+    font-family: 'Nunito', sans-serif;
     display: inline-block;
     margin: 0px 0px 0px 16px;
     vertical-align: middle;
     /* edit font */
 }
 
-nav li a {
-    color: black;
+nav ul.desktop li a {
+    color: #5c5c5c;
     text-decoration: none;
 }
 
+nav a.mobile {
+    display: none;
+}
+
 /* general */
-/*TODO: 
-- set font for paragraphs
-- set font for section headers (h2)
-- set font for subsection headers (h3) 
-- set hover background color for subsections to gray */
 p {
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: lighter;
     color: #5c5c5c;
     font-size: 16px;
@@ -83,7 +88,7 @@ p {
 }
 
 h2 {
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: bold;
     width: 100%;
     color: #474747;
@@ -92,7 +97,7 @@ h2 {
 }
 
 h3 {
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: normal;
     width: 100%;
     color: #474747;
@@ -104,7 +109,7 @@ h3 {
 .section-container {
     width: 100%;
     height: auto;
-    padding: 32px 0px 32px 24px;
+    padding: 32px 0px 32px 0px;
     display: grid;
 }
 
@@ -118,7 +123,7 @@ h3 {
 
 #section-1 figure {
     grid-area: 1 / 1 / span 1 / span 1;
-    margin: 0px;
+    margin: 0px 0px 0px 24px;
 }
 
 #section-1 figure img {
@@ -152,6 +157,7 @@ h3 {
     background-color: #474747;
     color: #ffffff;
     font-size: 16px;
+    font-family: 'Nunito', sans-serif;
     padding: 8px 0px 8px 0px;
     border: none;
 }
@@ -173,6 +179,7 @@ h3 {
     display: flex;
     flex-flow: column;
     justify-content: start;
+    margin-left: 24px;
 }
 
 #section-2-left figure {
@@ -366,6 +373,7 @@ h3 {
     display: flex;
     flex-flow: column;
     width: 100%;
+    margin-left: 24px;
 }
 
 #section-4-left video {
@@ -391,3 +399,126 @@ h3 {
 } */
 
 /* footer */
+footer {
+    padding: 16px 24px 50px 24px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    font-family: Nunito, sans-serif;
+    font-weight: lighter;
+    color: #5c5c5c;
+    font-size: 12px;
+    line-height: 1.5;
+    display: inline-block;
+    margin: 0px 0px 0px 8px;
+}
+
+/* for mobile */
+@media only screen and (max-width: 1200px) {
+    /* header */
+    /* TODO:
+    - make desktop logo disappear
+    - format header as ul with justify-content as space-evenly */
+    header h1.desktop {
+        display: none;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    nav ul.desktop {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: row;
+        height: auto;
+        width: 100%;
+        margin: 0px auto 0px auto;
+        justify-content: space-evenly;
+    }
+
+    nav a.mobile {
+        display: block;
+        margin: auto 0px;
+    }
+
+    nav img.mobile {
+        display: block;
+        width: auto;
+        margin: 0px;
+    }
+
+    /* overall */
+    .section-container {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    /* section 1 */
+    #section-1 {
+        background-color: #dcdcdc;
+        display: flex;
+        flex-flow: column;
+    }
+    
+    #section-1 figure {
+        /* grid-area: 1 / 1 / span 1 / span 1; */
+        grid-area: unset;
+        margin: 0px;
+    }
+    
+    #section-1 figure img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #section-1-info {
+        /* grid-area: 1 / 2 / span 1 / span 1; */
+        grid-area: unset;
+        width: auto;
+        justify-content: start;
+        padding: 0px;
+        margin: 32px 16px;
+    }
+    
+    #section-1-info h2 {
+        width: 100%;
+        color: #474747;
+        font-size: 36px;
+        line-height: 1.5;
+        margin: 0px;
+    }
+    
+    #section-1-info p {
+        width: 100%;
+        color: #474747;
+        font-size: 20px;
+        margin: 32px 0px 24px 0px;
+    }
+    
+    #section-1-info button {
+        padding: 8px 0px 8px 0px;
+        display: block;
+    }
+    
+    #section-1-info button:hover {
+        cursor: pointer;
+    }
+}
