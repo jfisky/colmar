@@ -76,11 +76,28 @@ nav li a {
 - set hover background color for subsections to gray */
 p {
     font-family: sans-serif;
+    font-weight: lighter;
+    color: #5c5c5c;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 h2 {
     font-family: sans-serif;
     font-weight: bold;
+    width: 100%;
+    color: #474747;
+    font-size: 36px;
+    margin: 0px;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-weight: normal;
+    width: 100%;
+    color: #474747;
+    font-size: 24px;
+    margin: 0px;
 }
 
 /* sections overall */
@@ -143,7 +160,101 @@ h2 {
 }
 
 /* section 2 */
+#section-2 {
+    background-color: #ffffff;
+    grid-template: 1fr / 60% 1fr;
+    column-gap: 24px;
+}
 
+#section-2-left {
+    grid-area: 1 / 1 / span 1 / span 1;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+}
+
+#section-2-left figure {
+    margin: 0px;
+}
+
+#section-2-left figure img {
+    width: 100%;
+    height: auto;
+}
+
+#section-2-left h2 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.quote-source {
+    color: #474747;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-top: 24px;
+}
+
+#section-2-right {
+    display: grid;
+    grid-area: 1 / 2 / span 1 / span 1;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    width: 100%;
+}
+
+#s2-t1 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#s2-t2 {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#s2-t3 {
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.tab-type-1 {
+    display: grid;
+    grid-template: 1fr / 35% 1fr;
+    column-gap: 16px;
+    padding: 16px;
+}
+
+.tab-type-1:hover {
+    background-color: #dcdcdc;
+}
+
+.tab-type-1 figure {
+    grid-area: 1 / 1 / span 1 / span 1;
+    margin: 0px;
+}
+
+.tab-type-1 figure img {
+    width: 100%;
+    height: auto;
+}
+
+.tab-type-1-info {
+    grid-area: 1/ 2/ span 1 / span 1;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.tab-type-1-info p {
+    margin: 8px 0px 8px 0px;
+}
+
+.readmore {
+    color: #2370d6;
+    max-width: fit-content;
+}
+
+.readmore:hover {
+    cursor: pointer;
+}
 
 /* section 3 */
 #section-3 {
