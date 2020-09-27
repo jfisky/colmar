@@ -251,7 +251,7 @@ h3 {
 
 .tab-type-1-info {
     grid-area: 1/ 2/ span 1 / span 1;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -475,6 +475,14 @@ footer li {
         flex-flow: column;
     }
 
+    p {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
     /* section 1 */
     #section-1 {
         background-color: #dcdcdc;
@@ -544,11 +552,16 @@ footer li {
 
     #section-2-right .tab-type-1 figure.mobile {
         display: block;
+        margin-bottom: 32px;
     }
 
     #section-2-right .tab-type-1 .tab-type-1-info {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .tab-type-1-info .readmore {
+        margin: 0px;
     }
 
     #section-2-right #s2-t3 {
@@ -624,5 +637,15 @@ footer li {
     }
 
     /* footer */
-    
+    footer {
+        padding: 16px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    footer ul {
+        display: none;
+    }
 }
