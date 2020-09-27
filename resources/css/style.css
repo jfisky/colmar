@@ -600,4 +600,29 @@ footer li {
         display: none;
     }
 
+    /* section 4 */
+    #section-4 h2 {
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    #section-4-grid {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #section-4-right {
+        display: none;
+    }
+
+    #section-4-left {
+        margin: 0px;
+    }
+
+    #section-4-left p, #section-4-left h3 {
+        display: none;
+    }
+
+    /* footer */
+    
 }
