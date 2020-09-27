@@ -476,11 +476,15 @@ footer li {
     }
 
     p {
-        font-size: 18px;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 40px;
     }
 
     h3 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     /* section 1 */
@@ -513,7 +517,7 @@ footer li {
     #section-1-info h2 {
         width: 100%;
         color: #474747;
-        font-size: 36px;
+        font-size: 40px;
         line-height: 1.5;
         margin: 0px;
     }
@@ -521,13 +525,14 @@ footer li {
     #section-1-info p {
         width: 100%;
         color: #474747;
-        font-size: 20px;
+        font-size: 24px;
         margin: 32px 0px 24px 0px;
     }
     
     #section-1-info button {
         padding: 8px 0px 8px 0px;
         display: block;
+        font-size: 24px;
     }
 
     /* section 2 */
@@ -562,6 +567,7 @@ footer li {
 
     .tab-type-1-info .readmore {
         margin: 0px;
+        font-size: 24px;
     }
 
     #section-2-right #s2-t3 {
