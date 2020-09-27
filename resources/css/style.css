@@ -235,6 +235,10 @@ h3 {
     background-color: #dcdcdc;
 }
 
+#section-2-right .tab-type-1 figure.mobile {
+    display: none;
+}
+
 .tab-type-1 figure {
     grid-area: 1 / 1 / span 1 / span 1;
     margin: 0px;
@@ -517,8 +521,83 @@ footer li {
         padding: 8px 0px 8px 0px;
         display: block;
     }
-    
-    #section-1-info button:hover {
-        cursor: pointer;
+
+    /* section 2 */
+    #section-2 {
+        display: flex;
+        flex-flow: column;
     }
+
+    #section-2-left {
+        display: none;
+    }
+
+    #section-2-right .tab-type-1 {
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 64px;
+    }
+
+    #section-2-right .tab-type-1 figure.desktop {
+        display: none;
+    }
+
+    #section-2-right .tab-type-1 figure.mobile {
+        display: block;
+    }
+
+    #section-2-right .tab-type-1 .tab-type-1-info {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #section-2-right #s2-t3 {
+        padding-bottom: 32px;
+    }
+
+    /* section 3 */
+    #section-3 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        background-color: #ffffff;
+    }
+
+    #section-3 h2 {
+        margin-bottom: 16px;
+    }
+
+    #section-3-grid {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-flow: column;
+        /* column-gap: 8px; */
+        row-gap: 8px;
+    }
+
+    #section-3-grid .tab-type-2 figure {
+        display: none;
+    }
+
+    .tab-type-2 {
+        background-color: #dcdcdc;
+    }
+
+    .tab-type-2:hover {
+        background-color: #474747;
+    }
+
+    .tab-type-2-info {
+        padding: 16px 16px 24px 16px;
+    }
+
+    .tab-type-2-info h3 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .tab-type-2-info p {
+        display: none;
+    }
+
 }
